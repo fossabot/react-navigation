@@ -143,8 +143,7 @@ class CardStack extends React.Component {
   };
 
   _renderHeader(scene, headerMode) {
-    const { options } = scene.descriptor;
-    const { header: CustomHeader } = options;
+    const { header: CustomHeader } = this._getScreenDetails(scene).options;
 
     if (CustomHeader === null && headerMode === 'screen') {
       return null;
