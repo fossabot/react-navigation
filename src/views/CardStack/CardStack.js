@@ -143,13 +143,25 @@ class CardStack extends React.Component {
   };
 
   _renderHeader(scene, headerMode) {
-    const { header } = this._getScreenDetails(scene).options;
+    const { options } = scene.descriptor;
+    const { header: CustomHeader } = options;
 
-    if (typeof header !== 'undefined' && typeof header !== 'function') {
-      return header;
+    if (CustomHeader === null && headerMode === 'screen') {
+      return null;
     }
 
-    const renderHeader = header || (props => <Header {...props} />);
+    // check if it's a react element
+    if (React.isValidElement(CustomHeader)) {
+      return CustomHeader;
+    }
+
+    // Handle the case where the header option is a function or class, and provide the default
+    const renderHeader = CustomHeader
+      ? CustomHeader.prototype.render
+        ? props => <CustomHeader {...props} />
+        : CustomHeader
+      : props => <Header {...props} />;
+
     const {
       headerLeftInterpolator,
       headerTitleInterpolator,
