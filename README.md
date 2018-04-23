@@ -1,6 +1,7 @@
 # React Navigation
 
 [![npm version](https://badge.fury.io/js/react-navigation.svg)](https://badge.fury.io/js/react-navigation) [![codecov](https://codecov.io/gh/react-community/react-navigation/branch/master/graph/badge.svg)](https://codecov.io/gh/react-community/react-navigation) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactnavigation.org/docs/guides/contributors)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftimwangdev%2Freact-navigation.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftimwangdev%2Freact-navigation?ref=badge_shield)
 
 React Navigation is born from the React Native community's need for an extensible yet easy-to-use navigation solution based on Javascript.
 
@@ -66,3 +67,6 @@ This library has adopted a Code of Conduct that we expect project participants t
 ## License
 
 React-navigation is licensed under the [BSD 2-clause "Simplified" License](https://github.com/react-community/react-navigation/blob/master/LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftimwangdev%2Freact-navigation.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftimwangdev%2Freact-navigation?ref=badge_large)
